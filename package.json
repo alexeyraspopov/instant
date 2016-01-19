@@ -18,9 +18,10 @@
   },
   "scripts": {
     "test": "mocha --require should",
-    "prepublish": "browserify client/index.js -o client/bundle.js"
+    "postinstall": "browserify client/index.js -o client/bundle.js"
   },
   "dependencies": {
+    "express": "~4.13.3",
     "filewatcher": "^2.2.0",
     "send": "^0.12.1",
     "sendevent": "^1.0.4",
